@@ -6,13 +6,11 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="/stilos/1registrar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" src="/stilos/style.css">
-
-    <title>members</title>
+    <title>register</title>
 </head>
 
 <body>
@@ -40,13 +38,14 @@
             <div>
                 imagenes
             </div>
-            <p>Don't have an aqcount yet?
-                <a href="/vistas/1registro.php ">Register</a>
+            <p>Aadready a member?
+                <a href="/index.php">Login </a>
             </p>
         </div>
 
 
     </main>
+
 </body>
 
 </html>

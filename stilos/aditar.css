@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor1 {
+    width: 845.911px;
+        height: 580.543px;
+        flex-shrink: 0;
+
+}
+div{
+    border: solid 1px
+}
