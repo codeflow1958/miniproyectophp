@@ -1,3 +1,10 @@
+<?php session_start();
+if (!isset($_SESSION['email_user'])) {
+    echo "debes iniciar sesion";
+    die();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +13,7 @@
 <body>
 
     <main>
+        <a href="/controler/logout.php"> cerrar sesion</a>
         <nav>
             <p>logo</p>
             <p> foto con info </p>
