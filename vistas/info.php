@@ -12,11 +12,15 @@ if (!isset($_SESSION['email_user'])) {
 
 <body>
 
-    <main>
-        <a href="/controler/logout.php"> cerrar sesion</a>
+    <div id="contenedor_todo">
+
         <nav>
-            <p>logo</p>
-            <p> foto con info </p>
+            <div>
+                <img src="/assets/devchallenges.svg" alt="">
+
+            </div>
+            <div><a href="/controler/logout.php"> cerrar sesion</a></div>
+
         </nav>
 
         <div>
@@ -28,7 +32,14 @@ if (!isset($_SESSION['email_user'])) {
             <div>
                 <div>
                     <p>photo</p>
-                    <img src="" alt="">
+                    <?php
+                    $imagen = base64_encode($_SESSION["photo_user"]);
+
+
+
+                    echo " <img src='data:image/*;base64,$imagen' height='200'/>";
+
+                    ?>
                 </div>
                 <div>
                     <p>NAME</p>
@@ -56,7 +67,7 @@ if (!isset($_SESSION['email_user'])) {
 
         </div>
 
-    </main>
+    </div>
 
 </body>
 

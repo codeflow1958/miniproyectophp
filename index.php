@@ -19,8 +19,8 @@
 <body>
     <div class=" border-solid border-2 border-indigo-600 rounded-lg container mx-auto w-80 " id="contenedor_todo">
         <div class="flex items-center">
-            <img class=" scale-75" src="/assets/devchallenges.png" alt="">
-            <p> devchallenges</p>
+            <img class=" scale-75" src="/assets/devchallenges.svg" alt="">
+
 
         </div>
 

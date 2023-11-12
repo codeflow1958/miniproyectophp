@@ -2,31 +2,50 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="/stilos/1registrar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>register</title>
 </head>
 
+
 <body>
-    <main>
+    <div class=" border-solid border-2 border-indigo-600 rounded-lg container mx-auto w-80 " id="contenedor_todo">
+        <div class="flex items-center">
+            <img class=" scale-75" src="/assets/devchallenges.svg" alt="">
+
+
+        </div>
+
+        <div>
+            <h1>Join thausands of leaners from around the word </h1>
+        </div>
+        <div>
+            <p>Master web development by making real-life project. there are multiple paths for you to choose</p>
+        </div>
+
 
         <form action="/vistas/registrarse.php" method="post">
 
 
-            <div class="mb-3 contenedro">
+            <div class="">
 
-                <input style="font: var(--fa-font-solid); " type="email" class="form-control icon_place" id="exampleInputEmail1" placeholder=" Email" aria-describedby="emailHelp" name="email">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <input type="email"
+                    class="form-control icon_place  border-solid border-2 border-indigo-600 rounded-lg  "
+                    id="InputEmail1" placeholder=" Email" aria-describedby="emailHelp" name="email">
+
             </div>
-            <div class="mb-3">
+            <div class="">
 
-                <input style="font: var(--fa-font-solid); " type="password" class="form-control icon" id="exampleInputPassword1" placeholder=" &#xf023; Password" name="password">
+                <input type="password" class="form-control icon  border-solid border-2 border-indigo-600 rounded-lg"
+                    id="Password1" placeholder="Password" name="password">
             </div>
 
-            <button type="submit" class="btn btn-primary" name="btningresar">Start coding now</button>
+            <button type="submit" name="btningresar">Start coding now</button>
         </form>
         <div>
             <p> or continue whith these social profile</p>
@@ -39,8 +58,9 @@
         </div>
 
 
-    </main>
-
+    </div>
 </body>
+
+
 
 </html>
