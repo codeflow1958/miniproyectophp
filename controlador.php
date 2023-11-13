@@ -1,7 +1,9 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["email"];
     $password = $_POST["password"];
+    $pass = $_POST["password"];
 
     require_once "./config/conexion.php";
 
@@ -22,31 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION["name_user"] = $userData['name'];
         $_SESSION["bio_user"] = $userData['bio'];
         $_SESSION["phone_user"] = $userData['phone'];
+        $_SESSION["id_user"] = $userData['id'];
+
 
 
         header("Location: ./vistas/info.php");
     } else {
         echo 'password incorrecto <a href="/index.php">login</a>';
     }
-
-
-
-
-
-
-
-    // if ($res->num_rows != 1) {
-    //     $userData = $res->fetch_assoc();
-    //     session_start();
-    //     $_SESSION["email_user"] = $userData['email'];
-    //     $_SESSION["photo_user"] = $userData['photo'];
-    //     $_SESSION["name_user"] = $userData['name'];
-    //     $_SESSION["bio_user"] = $userData['bio'];
-    //     $_SESSION["phone_user"] = $userData['phone'];
-
-
-    //     header("Location: ./vistas/info.php");
-    // } else {
-    //     echo " password o email incorrecto";
-    // }
 }

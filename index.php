@@ -37,15 +37,19 @@
 
             <div class="">
 
-                <input type="email" class="form-control icon_place  border-solid border-2 border-indigo-600 rounded-lg  " id="InputEmail1" placeholder=" Email" aria-describedby="emailHelp" name="email">
+                <input type="email"
+                    class="form-control icon_place  border-solid border-2 border-indigo-600 rounded-lg  "
+                    id="InputEmail1" placeholder=" Email" aria-describedby="emailHelp" name="email">
 
             </div>
             <div class="">
 
-                <input type="password" class="form-control icon  border-solid border-2 border-indigo-600 rounded-lg" id="Password1" placeholder="Password" name="password">
+                <input type="password" class="form-control icon  border-solid border-2 border-indigo-600 rounded-lg"
+                    id="Password1" placeholder="Password" name="password">
             </div>
 
-            <button type="submit" name="btningresar">Start coding now</button>
+            <button class="btn px-4 py-2 bg-blue-500 text-white rounded cursor-pointer" type="submit"
+                name="btningresar">Start coding now</button>
         </form>
         <div>
             <p> or continue whith these social profile</p>

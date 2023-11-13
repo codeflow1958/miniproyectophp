@@ -9,12 +9,19 @@ if (!isset($_SESSION['email_user'])) {
 <html lang="en">
 
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body>
 
     <div id="contenedor_todo">
 
-        <nav>
+        <nav class="flex  items-center gap-1">
             <div>
                 <img src="/assets/devchallenges.svg" alt="">
 
@@ -27,37 +34,39 @@ if (!isset($_SESSION['email_user'])) {
             <div>
                 <h1> Personal Info </h1>
                 <p> Basic info, like your name and photo</p>
-                <button> Edit</button>
+                <a href="/vistas/editar.php"><button
+                        class="btn px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"> Edit</button> </a>
+
             </div>
-            <div>
-                <div>
+            <div class=" w-75 border border-solid border-2 p-4">
+                <div class="flex  items-center gap-1">
                     <p>photo</p>
                     <?php
-                    $imagen = base64_encode($_SESSION["photo_user"]);
 
 
 
-                    echo " <img src='data:image/*;base64,$imagen' height='200'/>";
+
+                    echo  '<img src="data:image/jpg; base64,' . base64_encode($_SESSION["photo_user"]) . '" />';
 
                     ?>
                 </div>
-                <div>
+                <div class="flex  items-center gap-1 h-">
                     <p>NAME</p>
-                    <P> NICKY</P>
+                    <h2> <?php echo $_SESSION["name_user"];   ?></h2>
                 </div>
-                <div>
+                <div class="flex  items-center gap-1">
                     <p>BIO</p>
-                    <P> soy el mejor programador </P>
+                    <h2> <?php echo $_SESSION["bio_user"];   ?></h2>
                 </div>
-                <div>
+                <div class="flex  items-center gap-1">
                     <p>phone</p>
-                    <P> 121545485</P>
+                    <h2> <?php echo $_SESSION["phone_user"];   ?></h2>
                 </div>
-                <div>
+                <div class="flex items-center gap-1">
                     <p>EMAIL</p>
-                    <P> admin@admin.com</P>
+                    <h2> <?php echo $_SESSION["email_user"];   ?></h2>
                 </div>
-                <div>
+                <div class="flex  items-center gap-1">
                     <p>password</p>
                     <P> ******</P>
                 </div>
