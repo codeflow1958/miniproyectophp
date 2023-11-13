@@ -46,8 +46,14 @@ if (!isset($_SESSION['email_user'])) {
 
 
 
-                    echo  '<img src="data:image/jpg; base64,' . base64_encode($_SESSION["photo_user"]) . '" />';
 
+
+
+
+
+
+
+                    echo '<img src="data:image/jpg; base64,' . base64_encode($_SESSION[" photo_user"]) . '" />';
                     ?>
                 </div>
                 <div class="flex  items-center gap-1 h-">

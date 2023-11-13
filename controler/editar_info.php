@@ -16,24 +16,12 @@ if (empty($_POST['name']) || empty($_POST["bio"]) || empty($_POST["phone"]) || e
     echo "Todos los campos son obligatorios ";
 } else {
 
-
-
-
     $name = $_POST["name"];
     $bio = $_POST["bio"];
     $phone = $_POST["phone"];
     $email = $_POST["email"];
 
-
-
-
-
-
-
-
     $res = $mysqli->query("SELECT * FROM usuarios WHERE (email = '$email' AND id !='$iduser')");
-
-
     if ($res->num_rows > 0) {
         echo "el email ya existe";
     } else {
@@ -45,17 +33,14 @@ if (empty($_POST['name']) || empty($_POST["bio"]) || empty($_POST["phone"]) || e
                                         WHERE id ='$iduser'");
         } else {
             $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-
             $update = $mysqli->query("UPDATE usuarios 
                                         SET email ='$email',password = '$password' ,name = '$name', bio = '$bio', phone='$phone'
                                         WHERE id ='$iduser'");
         }
 
         if ($update) {
-
             echo 'inicie sesion <a href="/index.php">login</a>';
         } else {
-
             header("/controler/logout.php");
         }
     }
