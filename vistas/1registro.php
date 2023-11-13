@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body class="flex items-center justify-center h-screen">
     <div class=" border-solid border-2 border-indigo-600 rounded-lg container mx-auto w-80 " id="contenedor_todo">
         <div class="flex items-center">
             <img class=" scale-75" src="/assets/devchallenges.svg" alt="">
@@ -34,15 +34,12 @@
 
             <div class="">
 
-                <input type="email"
-                    class="form-control icon_place  border-solid border-2 border-indigo-600 rounded-lg  "
-                    id="InputEmail1" placeholder=" Email" aria-describedby="emailHelp" name="email">
+                <input type="email" class="form-control icon_place  border-solid border-2 border-indigo-600 rounded-lg  " id="InputEmail1" placeholder=" Email" aria-describedby="emailHelp" name="email">
 
             </div>
             <div class="">
 
-                <input type="password" class="form-control icon  border-solid border-2 border-indigo-600 rounded-lg"
-                    id="Password1" placeholder="Password" name="password">
+                <input type="password" class="form-control icon  border-solid border-2 border-indigo-600 rounded-lg" id="Password1" placeholder="Password" name="password">
             </div>
 
             <button type="submit" name="btningresar">Start coding now</button>

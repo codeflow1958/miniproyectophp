@@ -15,8 +15,13 @@
 
     <title>members</title>
 </head>
+<style>
+* {
+    font-family: 'Noto Sans', sans-serif
+}
+</style>
 
-<body>
+<body class="flex items-center justify-center h-screen">
     <div class=" border-solid border-2 border-indigo-600 rounded-lg container mx-auto w-80 " id="contenedor_todo">
         <div class="flex items-center">
             <img class=" scale-75" src="/assets/devchallenges.svg" alt="">

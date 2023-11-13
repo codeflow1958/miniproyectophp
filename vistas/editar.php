@@ -8,16 +8,23 @@ if (!isset($_SESSION['email_user'])) {
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    font-family: 'Noto Sans', sans-serif
+}
+</style>
 
-<body>
+
+<body class=" flex items-center justify-center h-screen">
 
     <div id="contenedor_todo">
 
@@ -34,7 +41,8 @@ if (!isset($_SESSION['email_user'])) {
             <div>
                 <h1>change info</h1>
                 <p> Basic info, like your name and photo</p>
-                <a href="/vistas/info.php"><button class="btn px-4 py-2 bg-blue-500 text-white rounded cursor-pointer">bio </button>
+                <a href="/vistas/info.php"><button
+                        class="btn px-4 py-2 bg-blue-500 text-white rounded cursor-pointer">bio </button>
                 </a>
 
             </div>
@@ -59,20 +67,20 @@ if (!isset($_SESSION['email_user'])) {
 
                         ?>
                     </div>
-                    <div class="flex  items-center gap-1 h-">
+                    <div class="mt-10 flex  items-center gap-1 border-t border-1 border-border-gray-500 space-x-32 ">
                         <p>NAME</p>
                         <input name="name" type="text" value=" <?php echo $_SESSION["name_user"];   ?> ">
                     </div>
-                    <div class="flex  items-center gap-1">
+                    <div class="mt-10 flex  items-center gap-1 border-t border-1 border-border-gray-500 space-x-32 ">
                         <p>BIO</p>
 
                         <input name="bio" type="text" value=" <?php echo $_SESSION["bio_user"];   ?> ">
                     </div>
-                    <div class="flex  items-center gap-1">
+                    <div class="mt-10 flex  items-center gap-1 border-t border-1 border-border-gray-500 space-x-32 ">
                         <p>phone</p>
                         <input name="phone" type="text" value="<?php echo $_SESSION["phone_user"];   ?>">
                     </div>
-                    <div class="flex items-center gap-1">
+                    <div class="mt-10 flex  items-center gap-1 border-t border-1 border-border-gray-500 space-x-32 ">
                         <p>EMAIL</p>
                         <input name="email" type="text" value="<?php echo $_SESSION["email_user"];   ?>">
                     </div>
@@ -81,7 +89,8 @@ if (!isset($_SESSION['email_user'])) {
                         <input name="password" type="text">
                     </div>
 
-                    <button class=" btn px-4 py-2 bg-blue-500 text-white rounded cursor-pointer" type="submit" class="btn btn-primary" name="btningresar">enviar</button>
+                    <button class=" btn px-4 py-2 bg-blue-500 text-white rounded cursor-pointer" type="submit"
+                        class="btn btn-primary" name="btningresar">enviar</button>
                 </form>
 
             </div>
