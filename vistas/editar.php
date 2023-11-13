@@ -34,7 +34,7 @@ if (!isset($_SESSION['email_user'])) {
             <div>
                 <h1>change info</h1>
                 <p> Basic info, like your name and photo</p>
-                <a href=""><button class="btn px-4 py-2 bg-blue-500 text-white rounded cursor-pointer">bio </button>
+                <a href="/vistas/info.php"><button class="btn px-4 py-2 bg-blue-500 text-white rounded cursor-pointer">bio </button>
                 </a>
 
             </div>
